@@ -1,5 +1,5 @@
 <h4 align="center">
- <img src="https://github.com/gitpcl/launchbase-challenge3/blob/master/.github/challenge3.gif" width="1500px" /><br>
+ <img src="https://github.com/gitpcl/launchbase-challenge3/blob/master/.github/challenge3.mov" width="1500px" /><br>
  <b>Rocketseat | Challenge 3</b> 👨‍💻
 </h4>
 <p align="center">
