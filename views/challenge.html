@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/challenges.css">
+    <link rel="stylesheet" href="/responsive.css">
+
+    <title>{{ item.title }}</title>
+{% endblock %}
+
+{% block content %}
+
+    <section class="challenge">
+
+        <div class="challenge-head">
+            <img src="/launchbase.png" alt="Launchbase Logo">
+            <h2>{{ item.title}}</h2>
+        </div>
+        <div class="challenge-content">
+            <h2>About the Challenge</h2>
+            <p>{{ item.description}}</p>
+            <h2>HTML Files</h2>
+            <p>{{ item.files }}</p>
+        </div>
+
+    </section>
+
+{% endblock%}

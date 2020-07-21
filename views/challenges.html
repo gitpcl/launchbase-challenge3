@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/challenges.css">
+    <link rel="stylesheet" href="/responsive.css">
+
+    <title>Challenges</title>
+{% endblock %}
+
+{% block content %}
+
+    <div id="wrapper">
+        <h1>Pick a Challenge</h1>
+    </div>
+
+    <section class="cards">
+
+        {% for item in items %}
+            <div class="card" id="{{item.id}}">
+                <div class="card__image-container">
+                    <img src="{{ item.challenge_url}}" alt="Image of Challenge">
+                </div>
+                <div class="card__content">
+                    <h5>{{item.title}}</h5>
+                    <p>{{item.preview}}</p>
+                </div>
+                <div class="card__info">
+                    <p>{{item.challengeNum}}</p>
+                    <p class="card__price">{{item.author}}</p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </section>
+    <script src="/script.js"></script>
+{% endblock%}

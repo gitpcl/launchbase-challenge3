@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap";
+
+:root {
+    --black-color: #171A19;
+    --gray-color: #323635;
+    --green-color: #419D78;
+    --yellow-color: #E0A458;
+    --red-color: #D9594C;
+    --blue-color: #53A2BE;
+
+}
+
+/*Clear browser default settings*/
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    font-weight:400;
+}
+
+body {
+    background: var(--black-color);
+    font-family: 'Roboto Slab', sans-serif;
+    color:white;
+}
+
+header {
+    padding: 32px;
+    border-bottom: 1px solid 333;
+    background: rgba(0,0,0,0.1);
+}
+
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px; /*Line height rule - 10px more than font size*/
+    margin:0 10px; 
+    text-decoration: none; /*can also use initial*/
+}
+
+.links a:hover {
+    color: var(--gray-color);
+    transition: color 200ms;
+
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+}
+
+#wrapper img {
+    height:200px;
+    border: 5px solid var(--four-color);
+    margin: 50px;
+
+}
+
+#wrapper h1 {
+    font-weight:400;
+    margin-bottom: 15px;
+}
+
+#wrapper h1 span {
+    border-bottom: 2px solid var(--green-color);
+    font-weight: 700;
+}
+
+#wrapper h2 {
+    font-weight:400;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+#wrapper p span {
+    border-bottom: 2px solid var(--red-color);
+}
+
+#wrapper p a {
+    text-decoration:none;
+    color: white;
+}
+
+#wrapper ul li span {
+    border-bottom: 2px solid var(--red-color);
+}
+
+#links-footer a {
+    border-bottom: 2px solid var(--blue-color);
+}
+
+#ghost {
+    height: 300px !important;
+}
+
+
+

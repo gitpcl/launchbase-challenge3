@@ -1,0 +1,92 @@
+.cards {
+    max-width: 800px;
+    margin:20px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    cursor:pointer;
+}
+
+.card {
+    background-color: var(--gray-color);
+    display:grid;
+}
+
+#c1:hover {
+    border: 2px solid var(--green-color);
+}
+
+#c2:hover {
+    border: 2px solid var(--red-color);
+}
+
+#c3:hover {
+    border: 2px solid var(--blue-color);
+}
+
+.card h5 {
+    opacity:0.6;
+    margin-bottom: 10px;
+}
+
+.card__image-container img {
+    width:100%;
+}
+
+.card__content, .card__info {
+    padding:24px;
+}
+
+.card__info {
+    display: grid; /*Place FREE next to min with GRID*/
+    grid-template-columns: 1fr 1fr; /*Divide grid in two*/
+    align-items:center;
+}
+
+.card__price {
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-bottom: 2px solid var(--yellow-color);
+    text-align: center;
+}
+
+/**CHALLENGE PAGE**/
+
+.challenge {
+    margin: 0 auto;
+    max-width:600px;
+
+}
+
+.challenge-head img{
+    width: 300px;
+
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    float: none;
+
+}
+
+.challenge-head h2 {
+    font-weight:800;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--yellow-color);
+}
+
+.challenge-content h2 {
+    border-bottom: 2px solid var(--gray-color);
+    margin-bottom: 10px;
+    text-align:center;
+    opacity:.6;
+}
+
+.challenge-content p {
+    margin-bottom: 10px;
+}
+
+.challenge-content li {
+    list-style-type: none;
+    color: var(--green-color);
+}
